@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Commands</title>
+</head>
+<body>
+	<style type="text/css">
+		.size1{
+			font-size: 20px;
+			width: 500px;
+		}
+		.size2{
+			font-size: 20px;
+			width: 100px;
+			height: 50px;
+		}
+
+	</style>
+	<h1>Select the command you want to run for RHEL Linux</h1>
+<form action="http://172.18.0.1/cgi-bin/project/command.py">
+<h2>See the options of Date</h2>
+<select class="size1" name = "command">
+	<option value = "date">
+		Date
+	</option>
+	<option value = "date --rfc-3339=date">
+		Only Date in numerical Format
+	</option>
+	<option value = "date --rfc-3339=seconds">
+		Date and Time with precision
+	</option>
+	<option value = "date -u">
+		Universal Date
+	</option>
+</select>
+<br>
+<br>
+<input class ="size2" type="submit" name="command">
+</form>
+<form action="http://172.18.0.1/cgi-bin/project/command.py">
+<h2>See the options of Calendar</h2>
+<select class="size1" name = "command">
+	<option value = "cal">
+		Calendar
+	</option>
+	<option value = "cal -j">
+		Julian Calendar
+	</option>
+	<option value = "ncal -p">
+		Country Codes
+	</option>
+	<option value = "ncal -w">
+		Number of week below columns
+	</option>
+	<option value = "ncal -3">
+		Display previous, current and next month surrounding today.
+	</option>
+</select>
+<br>
+<br>
+<input class ="size2" type="submit" name="command">
+</form>
+<form action="http://172.18.0.1/cgi-bin/project/command.py">
+<h2>See the OS you want to start</h2>
+<select class="size1" name = "command">
+	<option value = "docker run -it --name myos1 ubuntu:20.04">
+		Ubuntu 20.04
+	</option>
+	<option value = "docker run -it --name myos1 ubuntu:18.04">
+		Ubuntu 18.04
+	</option>
+	<option value = "docker run -it --name myos1 ubuntu:16.04">
+		Ubuntu 16.04
+	</option>
+	<option value = "docker run -it --name myos1 RHEl:8">
+		RHEL 8
+	</option>
+	<option value = "docker run -it --name myos1 RHEl:7">
+		RHEL 7
+	</option>
+	<option value = "docker run -it --name myos1 RHEl:6">
+		RHEL 6
+	</option>
+	<option value = "ocker run -it --name myos1 lxubuntu:18.04">
+		Lxubuntu 18.04
+	</option>
+</select>
+<br>
+<br>
+<input class ="size2" type="submit" name="command">
+</form>
+<p>To see the documentation of commands click here.</p>
+<a href="documentation.html">Documentaion</a>
+</body>
+</html>
